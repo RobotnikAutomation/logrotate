@@ -15,7 +15,6 @@ logrotate = open("logrotate.d/logrotate.conf","w")
 logrotate.write("# Include all log files in ~/workspaces/rb_theron/logs/\n")
 logrotate.write("# The files will be rotated up to 4 times when they exceed the size 1k or a week has passed.\n") 
 logrotate.write("# As the file is rotated every 7 days, 4 times maximum, there will be no files older than 28 days.\n")
-logrotate.write("# The copytruncate allows a copy of the file to be rotated. \n")
 logrotate.write("\n")
 
 for i in directorios:
