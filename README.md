@@ -16,11 +16,14 @@ In the following link you can consult the different parameters that can be used 
 In this case, the objective is to eliminate the log files older than one month, therefore the following parameters have been used.
 
 - maxsize 1k: This parameter indicates the maximum size that the file can have, in this case 1 kilobyte.
-- weekly: 
+- weekly: Rotates the log files every Sunday.
 - rotate 4: The log files will be changed 4 times before being removed.
 - nocompress: Older versions of the log files are not compressed.
 - notifempty: This indicates that the log file is not rotated if it is empty.
 - create: Right after the rotation, the new log file with the same name as the newly rotated one is created.
+
+
+With these parameters the files will be rotated up to 4 times when they exceed the size 1k or a week has passed. Since the file is rotated every 7 days, 4 times maximum, there will be no files older than 28 days.
 
 ## Logrotate-state
 
