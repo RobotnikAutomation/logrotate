@@ -24,7 +24,7 @@ In this case, the objective is to eliminate the log files older than one month, 
 - create: Right after the rotation, the new log file with the same name as the newly rotated one is created.
 
 
-With these parameters the files will be rotated up to 4 times when they exceed the size 1k or a week has passed. Since the file is rotated every 7 days, 4 times maximum, there will be no files older than 28 days.
+With these parameters the files will be rotated up to 4 times when they exceed the size 1k or a week has passed. Since the files are rotated every 7 days, 4 times maximum, there will be no files older than 28 days, except for those that are empty, which are not rotated.
 
 ## Logrotate-state
 
