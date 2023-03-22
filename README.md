@@ -2,7 +2,7 @@
 
 ## Crontab file
 Crontab is a tool with which you can schedule tasks. 
-You can modify the time how often you want a task to be executed by minutes, hours, days, months or years. In this case, the file has been configured to run logrotate every half hour. We must indicate the path where the logrotate.conf that we are going to use is located.
+You can modify the time how often you want a task to be executed by minutes, hours, days, months or years. In this case, the file has been configured to run logrotate every half hour. We must indicate the path where the logrotate that we are going to use is located.
 If we wanted to edit this file, we would only have to do the command:
 
 ```bash
