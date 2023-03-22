@@ -1,7 +1,8 @@
 # logrotate
 
 ## Crontab file
-Crontab is a tool with which you can schedule tasks. In this case, a crontab file has been created that runs the logrotate every half hour. If we wanted to edit this file, we would only have to do the command:
+Crontab is a tool with which you can schedule tasks. 
+You can modify the time how often you want a task to be executed by minutes, hours, days, months or years. In this case, the file has been configured to run logrotate every half hour. If we wanted to edit this file, we would only have to do the command:
 
 ```bash
 crontab -e
@@ -23,7 +24,7 @@ In this case, the objective is to eliminate the log files older than one month, 
 - create: Right after the rotation, the new log file with the same name as the newly rotated one is created.
 
 
-With these parameters the files will be rotated up to 4 times when they exceed the size 1k or a week has passed. Since the file is rotated every 7 days, 4 times maximum, there will be no files older than 28 days.
+With these parameters the files will be rotated up to 4 times when they exceed the size 1k or a week has passed. Since the files are rotated every 7 days, 4 times maximum, there will be no files older than 28 days, except for those that are empty, which are not rotated.
 
 ## Logrotate-state
 
