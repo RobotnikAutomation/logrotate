@@ -9,7 +9,7 @@ directorios = []
 for i in contenido:
     directorios.append(str(i))
 
-
+current_folder=os.getcwd()
 logrotate = open("logrotate.d/logrotate.conf","w")
 
 logrotate.write("# Include all log files in ~/workspaces/rb_theron/logs/\n")
@@ -18,7 +18,7 @@ logrotate.write("# As the file is rotated every 7 days, 4 times maximum, there w
 logrotate.write("\n")
 
 for i in directorios:
-    logrotate.write("~/workspaces/rb_theron/logs/" + i +"/*.log\n")
+    logrotate.write(current_folder + "/logs/" + i +"/*.log\n")
 
 
 logrotate.write("{\n")
